@@ -12,7 +12,7 @@ I used to be very obsessed with web development, to the point that I was known a
 
 But it feels limiting for me to be stuck to that
 
-I've always wanted to stay away from locking myself into being just one identity
+I've always been averse to being just one identity
 
 I'm by no means quitting web development (Relay Superposition Development), so much as this being a "send off" from that identity 
 
