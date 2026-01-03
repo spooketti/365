@@ -44,10 +44,47 @@ __________|
 */
 function normalizeMovementInput(input)
 {
-    if(inputType == inputType.Controller)
+    let calcVerticalInput = 0;
+    let calcHorizontalInput = 0;
+    if(input == inputType.Controller)
     {
         return;
     }
-    if(map['ArrowUp'] )
-    horizontalInput = map['ArrowUp']
+
+    if(heldKeyMap['ArrowUp'])
+    {
+       calcVerticalInput++;
+    }
+
+    if(heldKeyMap['ArrowDown'])
+    {
+        calcVerticalInput--;
+    }
+
+    if(heldKeyMap["ArrowRight"])
+    {
+        calcHorizontalInput++;
+    }
+
+    if(heldKeyMap["ArrowLeft"])
+    {
+        calcHorizontalInput--;
+    }
+
+    let inputHypot = Math.hypot(calcHorizontalInput,calcVerticalInput)
+    if(inputHypot > 1)
+    {
+        let normalMultiplier = (1/inputHypot)
+        calcHorizontalInput *= normalMultiplier;
+        calcVerticalInput *= normalMultiplier;
+    }
+    horizontalInput = calcHorizontalInput;
+    verticalInput = calcVerticalInput;
+    console.log("vertical: " + verticalInput)
+    console.log("horizontal: " + horizontalInput)
 }
+
+document.addEventListener('tick365', function(e) {
+    normalizeMovementInput(inputType.Keyboard)
+});
+
