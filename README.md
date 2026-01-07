@@ -28,3 +28,14 @@ And to extend upon this being an art project,
 
 ## No AI Usage
 Not that it would have been used in the first place, but it feels good to explicitly state it for anyone who wants my take on the manner
+
+## Modding
+I was thinking that since I'm choosing to use elements instead of a canvas element to render things, that makes it extremeley easy to cheat in this game
+
+But even then this is not a multiplayer game, so cheating is in it's own way an experience
+
+In fact, I think adding modding would be a fun experience
+
+I'm thinking of something similar to how Spectator's modding may be where there's simple mods and complex mods (or i guess Minecraft's datapack vs Java mods)
+
+That may entail setting assets in a JSON or running full blown custom js (with a disclaimer that whatever you run is your own risk)
