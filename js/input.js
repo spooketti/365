@@ -80,8 +80,8 @@ function normalizeMovementInput(input)
     }
     horizontalInput = calcHorizontalInput;
     verticalInput = calcVerticalInput;
-    console.log("vertical: " + verticalInput)
-    console.log("horizontal: " + horizontalInput)
+    // console.log("vertical: " + verticalInput)
+    // console.log("horizontal: " + horizontalInput)
 }
 
 document.addEventListener('tick365', function(e) {
