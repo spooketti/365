@@ -7,7 +7,7 @@
 
 .programmable
 {
-    
+    position: relative;
 }
 
 .programmed
@@ -19,6 +19,20 @@
 {
     width:100%;
     height:100%;
+    white-space: normal;     /* Allows text to wrap normally */
+    word-wrap: break-word;   /* Breaks long words if needed */
+    overflow-wrap: break-word; /* Modern equivalent for word-wrap */
+}
+
+.codeInput
+{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background:none;
+    
 }
 
 #TEST
