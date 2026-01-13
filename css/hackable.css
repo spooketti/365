@@ -46,6 +46,8 @@
     white-space: pre-wrap;
     color: white;
     -webkit-text-fill-color: transparent;
+    font-size: 13px;
+    resize: none;
 }
 
 #TEST {
