@@ -4,6 +4,7 @@ let verticalInput = 0;
 let heldKeyMap = {};
 //TODO: rebindable keys by extension
 //i guess thats doable with just another mapx`
+//i need sleep so im just going to burn a comimit well wel well
 
 const inputType = {
     Keyboard:'Keyboard',
