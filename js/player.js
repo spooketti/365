@@ -20,7 +20,7 @@ function removeForce()
 
 function getPosition()
 {
-
+    return [posX,posY]
 }
 
 function setPosition(x,y)
