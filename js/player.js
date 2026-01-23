@@ -30,3 +30,9 @@ function setPosition(x,y)
     document.getElementById("player").style.left = posX
     document.getElementById("player").style.top = posY
 }
+
+document.addEventListener('tick365', function(e) {
+    // console.log("breh")
+    // console.log(getPosition())
+    setPosition(100*Math.cos(Date.now()/1000)+300,100*Math.sin(Date.now()/1000)+500)
+});
