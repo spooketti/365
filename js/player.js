@@ -34,5 +34,6 @@ function setPosition(x,y)
 document.addEventListener('tick365', function(e) {
     // console.log("breh")
     // console.log(getPosition())
+    //did this break down
     setPosition(100*Math.cos(Date.now()/1000)+300,100*Math.sin(Date.now()/1000)+500)
 });
