@@ -19,9 +19,6 @@ function intersectsByAABB(element1, element2) {
 
 }
 
-function intersectsByAABB() {
-
-}
 
 //maybe ill leave code comments actually maybe not because it is just going to be an easy excuse for having un
 //meaningful commits
