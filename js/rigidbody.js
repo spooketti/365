@@ -1,24 +1,40 @@
 class Rigidbody {
     posX = 0
     posY = 0
+    velX = 0
+    velY = 0
     element = null
+    mass = 1 //kg
+    forces = {
+        "sampleForce": [0, 0] //x,y both in terms of N
+    }
     constructor(posX, posY, element) {
         this.posX = posX
         this.posY = posY
         this.element = element
+        this.addForce("gravity")
     }
 
 
     applyForces() {
-
+        let netX = 0
+        let netY = 0
+        for (const [forceName, N] of Object.entries(this.forces)) {
+            netX += N[0]
+            netY += N[1]
+        }
+        netX /= this.mass
+        netY /= this.mass
+        this.velX += netX*((1000)/fps) //vf=vi+at
+        this.velY += netY*((1000)/fps)
     }
 
-    addForce() {
-
+    setForce(forceName, Nx, Ny) {
+        this.forces[forceName] = [Nx, Ny]
     }
 
-    removeForce() {
-
+    removeForce(forceName) {
+        delete forces[forceName]
     }
 
     getPosition() {
