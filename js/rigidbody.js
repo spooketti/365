@@ -8,11 +8,15 @@ class Rigidbody {
     forces = {
         "sampleForce": [0, 0] //x,y both in terms of N
     }
+    impulses =
+        {
+            "sampleImplse": [0, 0] //this is just a force that is only applied for 1 frame
+        }
     constructor(posX, posY, element) {
         this.posX = posX
         this.posY = posY
         this.element = element
-        this.setForce("gravity",0,0.001) //calc this manually
+        this.setForce("gravity", 0, 0.001) //calc this manually
     }
 
 
@@ -25,15 +29,19 @@ class Rigidbody {
         }
         netX /= this.mass
         netY /= this.mass
-        this.velX += netX*((1000)/fps) //vf=vi+at
-        this.velY += netY*((1000)/fps)
-        this.posX += (this.velX)*((1000)/fps) //v=x/t, x=(v*t)
-        this.posY += (this.velY)*((1000)/fps)
-        this.setPosition(this.posX,this.posY)
+        this.velX += netX * ((1000) / fps) //vf=vi+at
+        this.velY += netY * ((1000) / fps)
+        this.posX += (this.velX) * ((1000) / fps) //v=x/t, x=(v*t)
+        this.posY += (this.velY) * ((1000) / fps)
+        this.setPosition(this.posX, this.posY)
     }
 
     setForce(forceName, Nx, Ny) {
         this.forces[forceName] = [Nx, Ny]
+    }
+
+    setImpulse(forceName, Nx, Ny) {
+
     }
 
     removeForce(forceName) {
