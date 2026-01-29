@@ -7,7 +7,7 @@ class Player extends Rigidbody {
     }
 }
 
-player = new Player(0,0,document.getElementById("player"))
+player = new Player(0,300,document.getElementById("player"))
 
 document.addEventListener('tick365', function(e) {
         // console.log("breh")
