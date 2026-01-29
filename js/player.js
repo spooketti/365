@@ -16,5 +16,6 @@ document.addEventListener('tick365', function(e) {
         //did this break down
         //very sad
         // player.setPosition(100 * Math.cos(Date.now() / 1000) + 300, 100 * Math.sin(Date.now() / 1000) + 500)
-        console.log(intersectsByAABB(player.element, document.getElementById("TEST")))
+        // console.log(intersectsByAABB(player.element, document.getElementById("TEST")))
+        player.applyForces()
     });

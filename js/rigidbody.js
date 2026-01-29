@@ -12,7 +12,7 @@ class Rigidbody {
         this.posX = posX
         this.posY = posY
         this.element = element
-        this.addForce("gravity")
+        this.setForce("gravity",0,0.001) //calc this manually
     }
 
 
@@ -27,6 +27,9 @@ class Rigidbody {
         netY /= this.mass
         this.velX += netX*((1000)/fps) //vf=vi+at
         this.velY += netY*((1000)/fps)
+        this.posX += (this.velX)*((1000)/fps) //v=x/t, x=(v*t)
+        this.posY += (this.velY)*((1000)/fps)
+        this.setPosition(this.posX,this.posY)
     }
 
     setForce(forceName, Nx, Ny) {
