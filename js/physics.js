@@ -27,3 +27,5 @@ function raycast(originX,originY,dir,magnitude)
 //albiet this fails to consider extremeley high velocities where one frame later is miles away
 //then check the line between df and F (or actually df could be the future frame given how applyForces works)
 //and do the intersection math
+
+//acc this wont work for things like teleportation unless we set a var like "is immune to the collision"
