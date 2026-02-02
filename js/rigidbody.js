@@ -1,6 +1,8 @@
 class Rigidbody {
     posX = 0
     posY = -200
+    dX = 0
+    dY = 0 //
     velX = 0
     velY = 0
     element = null
@@ -31,6 +33,8 @@ class Rigidbody {
         netY /= this.mass
         this.velX += netX * ((1000) / fps) //vf=vi+at
         this.velY += netY * ((1000) / fps)
+        this.dX = this.posX
+        this.dY = this.posY
         this.posX += (this.velX) * ((1000) / fps) //v=x/t, x=(v*t)
         this.posY += (this.velY) * ((1000) / fps)
         this.setPosition(this.posX, this.posY)
