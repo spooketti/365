@@ -22,7 +22,6 @@ class Rigidbody {
         this.setImpulse("skibidi", 1, 0)
     }
 
-
     applyForces() {
         let netF = this.getNetForce()
         this.clearImpulses()
