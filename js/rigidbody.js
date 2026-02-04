@@ -12,7 +12,7 @@ class Rigidbody {
     }
     impulses =
         {
-            "sampleImplse": [0.05, -0.05, 0] //this is just a force that is only applied for 1 frame
+            "sampleImplse": [0.05, -0.05, 0] //this is just a force that is only applied for 1 frame my spine hurts really bad
         }
     constructor(posX, posY, element) {
         this.posX = posX
