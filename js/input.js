@@ -81,6 +81,7 @@ function normalizeMovementInput(input)
     }
     horizontalInput = calcHorizontalInput;
     verticalInput = calcVerticalInput;
+    horizontalInput.
     //cooked
     // console.log("vertical: " + verticalInput)
     // console.log("horizontal: " + horizontalInput)
