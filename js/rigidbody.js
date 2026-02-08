@@ -48,6 +48,7 @@ class Rigidbody {
     }
 
     //i feel bad leaving these but nows really not a godo time
+    //coverin bases
 
     clearImpulses() {
         this.impulses = {}
