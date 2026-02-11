@@ -48,7 +48,7 @@ class Rigidbody {
     }
 
     //i feel bad leaving these but nows really not a godo time
-    //coverin basess
+    //coverin basess3
 
     clearImpulses() {
         this.impulses = {}
