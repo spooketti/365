@@ -13,7 +13,7 @@ document.addEventListener('tick365', function(e) {
         // console.log("breh")
         // console.log(getPosition())
         //sad
-        //did this break down
+        //did this break down pixelated a
         //very sad
         // player.setPosition(100 * Math.cos(Date.now() / 1000) + 300, 100 * Math.sin(Date.now() / 1000) + 500)
         // console.log(intersectsByAABB(player.element, document.getElementById("TEST")))
