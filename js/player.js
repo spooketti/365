@@ -12,7 +12,7 @@ player = new Player(0,300,document.getElementById("player"))
 document.addEventListener('tick365', function(e) {
         // console.log("breh")
         // console.log(getPosition())
-        //sad
+        //sadd
         //did this break down pixelated a
         //very sad
         // player.setPosition(100 * Math.cos(Date.now() / 1000) + 300, 100 * Math.sin(Date.now() / 1000) + 500)
