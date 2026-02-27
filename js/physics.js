@@ -22,7 +22,7 @@ function raycast(originX,originY,dir,magnitude)
 //or a possible idea, represent the line as a bounding box
 //to do a lump check to see if anything was in the lines bounding box
 //if it is, do some precise math stuff
-//perhaps order would be
+//perhaps order would be maybe ive already found what i was looking for
 
 //check one frame in the future's position is intersecting any objects
 //albiet this fails to consider extremeley high velocities where one frame later is miles away
