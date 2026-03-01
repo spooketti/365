@@ -15,7 +15,7 @@ function raycast(originX,originY,dir,magnitude)
 //easy enough to model with just functions
 
 //actually maybe it's possible, take the position they were just at one frame ago which will be referred to for now as
-//df and f will be the current frame
+//df and f will be the current framed
 
 //draw a stright line between df and f's positions and then you have a straight line ideally
 //then do the minkowski sum or wtv
