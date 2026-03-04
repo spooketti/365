@@ -6,7 +6,7 @@ function raycast(originX,originY,dir,magnitude)
     tis
 }
 
-//b
+//bb
 //just going to cover the daily hhere but theres a lot of ways to handle collision
 
 //for now nothing's expected to rotate, that sounds like a question for another day
